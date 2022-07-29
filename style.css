@@ -1,0 +1,156 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* **Header */
+
+.header{
+    background: url(/Images/background.jpg) no-repeat center;
+
+}
+.burger{
+    display: flex;
+    justify-content: end;
+}
+.navbar-toggler{
+    background-color: white;
+    
+}
+.contain{
+    margin-top: auto;
+}
+
+
+.search{
+    text-align: center;
+    /* width: 250px;
+    height: 200px; */
+    margin: auto;
+    padding-bottom: 25px;
+    
+}
+.bg-white{
+    opacity: 99%;
+}
+.start_finish{
+    
+    padding: 5px 5px 5px 5px;
+    opacity: 100%;
+   
+}
+
+.start_finish_button button{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 226, 57, 0.719);
+    border: none;
+    color: white;
+}
+.disp_none{
+    display: none;
+}
+.lenght{
+    width: 85%;
+    border-radius: 4px;
+}
+
+/* ** Section */
+
+.cards{
+    justify-content: space-between;
+    align-items:center;
+}
+ .border_r{
+    border-radius: 5px;
+    width: 120px;
+ }
+ .button_shop{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    background-color: rgb(76, 199, 76);
+ }
+ .click button{
+    border:none;
+    
+ }
+ .img_cars{
+    width: 115px;
+    height: 100px;
+ }
+
+ .cards span{
+    color: black;
+ }
+
+ /* ****** footer */
+ footer{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ Footer img{
+    padding: 10px 5px 10px 5px;
+    width: 130px;
+    height: 110px;
+ }
+ Footer p{
+    margin: 0;
+    
+ }
+
+ /*  responcive************* media queries */
+
+/* pour écran plus grand que 700px je veut que : */
+ @media only screen and (min-width: 700px) {
+        /* header/Nav /responscive  */
+    .valid{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border: none;
+    }
+    .start_finish{
+        width: 300px;
+    }
+    .start_finish_button button{
+        padding: 10px;
+    }
+
+    /* section /contenu de la page */
+
+    .cards{
+        justify-content: space-around;
+    }
+    
+
+    .img_cars{
+        width: 225px;
+        height: 160px;
+    }
+
+    .disp_none{ 
+        width: 300px;
+        display: block;
+    }
+
+    /* footer bas de page */
+
+    Footer img{
+        
+        width: 180px;
+        height: 140px;
+    }
+    Footer p{
+        margin: 15px;
+        
+     }
+
+
+ }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue-à-Bord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header /CONTAINER/ nav -->
+    <header class="header" id="Header">
+            <nav class="burger navbar pe-4 pt-4">
+                
+                <div class="collapse nav_a" id="navbarToggleExternalContent">
+                    <a href="*">Louer une Voiture</a>
+                    <a href="*">Louer un Utilitaire</a>
+                    <a href="*">Réserver un chauffeur</a>
+                    <a href="*">Découvrez nos Agences</a>
+                    <a href="*">Mon Compte</a>
+                    <a href="*">Contact</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </nav>
+        <div class="container contain">
+
+        <!-- la nav est un menu dépliant qui se nomme NAVBURGER -->
+            
+            <!-- le title  -->
+            <div class="mt-5 mb-5 text-center white">
+
+                <h1>Bienvenue à Bord</h1>
+                <h3>Location de Voiture 24h/24 et 7j/7</h3>
+
+            </div>
+
+            <!-- filtre de navigation = Nav -->
+
+            <div class="search flex-column text-center ">
+
+                <div class="valid bg-white ">
+                    <div class="start_finish">
+                        <select name="startingadress" id="depart" class="lenght">
+                            <option value="">Adresse de départ</option>
+
+                            <option value="lille">Lille</option>
+                            <option value="marseille">Marseille</option>
+                            <option value="paris">Paris</option>
+                        </select>
+                    </div>
+
+                    <div class="start_finish">
+                    <!-- faire un log de l'objet date pour modifié les jj/mm/aa en début de location et aussi pour la fin de location -->
+                    <input type="date" class="lenght" value="Début de location"> 
+                    </div>
+
+                   <div class="start_finish"> <input type="date" class="lenght" placeholder="Date de départ"> 
+                    </div>
+
+                    <div class="start_finish_button"><button type="button">Valider ma Recherche</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ******************* contenu de la page -->
+    <section class="container">
+
+        <div class="d-flex justify-content-between mt-5 mb-4">
+            <h5> 4 résultat</h5>
+            <!-- filter -->
+            <select name="price" id="price" class="border_r">
+                <option value="prix">Prix Croissant</option>
+                <option value="prix-">Prix Décroissant</option>
+            </select>
+        </div>
+        
+        <!-- cars 1 -->
+        <div class="cards d-flex">
+            <div class="d-flex align-items-center">
+                <a href="*" class="click"><button>⏴</button></a>
+                <img class="img_cars" src="./Images/vehicule1.png" alt="First slide">
+                <a href="*" class="click"><button>⏵</button></a>
+            </div>
+            <!-- faire en sorte que sa n'apparaisse qu'a partir du moment ou l'écran s'agrandit attention au Display-NONE--> 
+            <div class=" text-center "> 
+                <h6 class=" mb-4 disp_none">modéle 208</h6> 
+                <p class="disp_none">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), <br>
+                    999€ - Agence de Paris</p>
+                <button class="button_shop">Réserver et Payer</button>
+            </div>
+
+        </div>
+        <hr>
+        <!-- cars 2 -->
+        <div class="cards d-flex">
+            <div class="d-flex align-items-center">
+                <a href="*" class="click"><button>⏴</button></a>
+                <img class="img_cars " src="./Images/vehicule2.png" alt="First slide">
+                <a href="*" class="click"><button>⏵</button></a>
+            </div>
+
+            <div class="  text-center"> 
+                <h6 class=" mb-4 disp_none">modéle 308</h6> 
+                <p class="disp_none">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), <br>
+                    999€ - Agence de Paris</p>
+                <button class="button_shop">Réserver et Payer</button>
+            </div>
+
+        </div>
+        <hr>
+        <!-- cars 3 -->
+        <div class="cards d-flex">
+            <div class="d-flex align-items-center">
+                <a href="*" class="click"><button>⏴</button></a>
+                <img class="img_cars " src="./Images/vehicule3.png" alt="First slide">
+                <a href="*" class="click"><button>⏵</button></a>
+            </div>
+
+            <div class="  text-center "> 
+                <h6 class=" mb-4 disp_none">modéle 408</h6> 
+                <p class="disp_none">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), <br>
+                    999€ - Agence de Paris</p>
+                <button class="button_shop">Réserver et Payer</button>
+            </div>
+
+        </div>
+        <hr>
+        <!-- cars 4 -->
+        <div class="cards d-flex">
+            <div class="d-flex align-items-center">
+                <a href="*" class="click"><button>⏴</button></a>
+                <img class="img_cars " src="./Images/vehicule4.png" alt="First slide">
+                <a href="*" class="click"><button>⏵</button></a>
+            </div>
+            <div class=" text-center"> 
+                <h6 class=" mb-4  disp_none">modéle 508</h6> 
+                <p class=" disp_none">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire), <br>
+                    999€ - Agence de Paris</p>
+                <button class="button_shop" type="button">Réserver et Payer</button>
+            </div>
+
+        </div>
+    
+    </section>
+    <!-- ******************* -->
+    <hr>
+    <footer class="container ">
+        <div class="d-flex justify-content-center">
+            <img src="./Images/agence.jpg" alt="Adresse du Site">
+            <div>
+                <h6>Notre Agence de Paris</h6>
+                <p>300 boulevard de vaugirard, 75015, Paris</p>
+                <p>01 49 78 21 33</p>
+                <p>contact@vtc.com</p>
+            </div>
+        </div>
+    </footer>
+ <!--div de fin de container--> 
+
+<!-- *********** -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
